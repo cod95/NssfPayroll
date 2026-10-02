@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <!-- إذا عندك SDK أحدث (مثلاً net10.0-windows) غيّر السطر هذا -->
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <RootNamespace>NssfPayroll</RootNamespace>
+    <AssemblyName>NssfPayroll</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- قالب الإكسل (ملفك الأصلي): بيتنسخ جنب البرنامج -->
+    <Content Include="Template\NssfTemplate.xlsx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
